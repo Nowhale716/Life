@@ -54,12 +54,12 @@ struct Game{
 };
 
 void createField(int width, int height) {
-    printf("Field created with width : %d and height %d", width, height);
+    printf("Field created with width : %d and height %d\n", width, height);
 }
 
 
 void destroyField(Field field) {
-    printf("Field is destroyed");
+    printf("Field is destroyed\n");
 }
 
 void createCell(struct Cell* cell, int x, int y, int state) {
@@ -69,10 +69,10 @@ void createCell(struct Cell* cell, int x, int y, int state) {
 }
 
 void printCell(struct Cell* cell, int x, int y, int state) {
-    printf("Cell created with coordinates x:%d y:%d", cell->x, cell->y);
+    printf("Cell created with coordinates x:%d y:%d \n", cell->x, cell->y);
 }
 void deadCell(struct Cell* cell) {
-    printf("Cell was dead");
+    printf("Cell was dead\n");
 }
 
 
