@@ -45,6 +45,7 @@ struct State {
     int generation;
     Field* Field;
 };
+
 struct Game{
     Field* current_grid;   // Текущее состояние игрового поля
     Field* next_grid;      // Следующее состояние игрового поля
@@ -52,11 +53,8 @@ struct Game{
     int max_generations;  // Максимальное количество поколений
 };
 
-
-
-
 void createField(int width, int height) {
-    printf("Field created with width : %d and height %d", &width, &height);
+    printf("Field created with width : %d and height %d", width, height);
 }
 
 
@@ -64,12 +62,28 @@ void destroyField(Field field) {
     printf("Field is destroyed");
 }
 
+void createCell(struct Cell* cell, int x, int y, int state) {
+    cell->x = x;
+    cell->y = y;
+    cell->state = 1;
+}
+
+void printCell(struct Cell* cell, int x, int y, int state) {
+    printf("Cell created with coordinates x:%d y:%d", cell->x, cell->y);
+}
+void deadCell(struct Cell* cell) {
+    printf("Cell was dead");
+}
+
 
 int main()
 {
+    struct Cell cell;
     createField(20,20);
     Field pole;
     pole.height = 100;
     pole.width = 100;
+    createCell(&cell, 0, 0, 1);
+    deadCell(&cell);
     destroyField(pole);
 }
