@@ -2,6 +2,8 @@
 
 
 struct Cell {
+    int x;          // Координата X клетки
+    int y;          // Координата Y клетки
     int state;  // 1 - живая, 0 - мертвая
 };
 
@@ -26,6 +28,7 @@ struct Neighbors {
     int bottom_left;
     int bottom;
     int bottom_right;
+    int alive_count;
 };
 
 struct Change {
@@ -42,10 +45,14 @@ struct State {
     int generation;
     Field* Field;
 };
-
-struct Food {
-
+struct Game{
+    Field* current_grid;   // Текущее состояние игрового поля
+    Field* next_grid;      // Следующее состояние игрового поля
+    Rule rules;          // Правила игры
+    int max_generations;  // Максимальное количество поколений
 };
+
+
 
 
 void createField(int width, int height) {
