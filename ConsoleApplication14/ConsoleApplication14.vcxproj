@@ -144,16 +144,20 @@
     <ClCompile Include="Changs.cpp" />
     <ClCompile Include="ConsoleApplication14.cpp" />
     <ClCompile Include="Field.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Neighbours.cpp" />
     <ClCompile Include="Rule.cpp" />
+    <ClCompile Include="State.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Change.h" />
     <ClInclude Include="Changs.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Neighbours.h" />
     <ClInclude Include="Rule.h" />
+    <ClInclude Include="State.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
