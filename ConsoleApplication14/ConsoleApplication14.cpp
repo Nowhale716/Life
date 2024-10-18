@@ -1,12 +1,6 @@
 ﻿#include <iostream>
 
 
-struct Cell {
-    int x;          // Координата X клетки
-    int y;          // Координата Y клетки
-    int state;  // 1 - живая, 0 - мертвая
-};
-
 struct Field {
     int width;
     int height;
@@ -60,19 +54,6 @@ void createField(int width, int height) {
 
 void destroyField(Field field) {
     printf("Field is destroyed\n");
-}
-
-void createCell(struct Cell* cell, int x, int y, int state) {
-    cell->x = x;
-    cell->y = y;
-    cell->state = 1;
-}
-
-void printCell(struct Cell* cell, int x, int y, int state) {
-    printf("Cell created with coordinates x:%d y:%d \n", cell->x, cell->y);
-}
-void deadCell(struct Cell* cell) {
-    printf("Cell was dead\n");
 }
 
 
