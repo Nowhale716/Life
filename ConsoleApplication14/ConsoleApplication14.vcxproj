@@ -145,6 +145,7 @@
     <ClCompile Include="ConsoleApplication14.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="Neighbours.cpp" />
+    <ClCompile Include="Rule.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="Changs.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="Neighbours.h" />
+    <ClInclude Include="Rule.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
