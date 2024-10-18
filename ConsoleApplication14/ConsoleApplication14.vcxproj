@@ -143,12 +143,14 @@
     <ClCompile Include="Change.cpp" />
     <ClCompile Include="Changs.cpp" />
     <ClCompile Include="ConsoleApplication14.cpp" />
+    <ClCompile Include="Field.cpp" />
     <ClCompile Include="Neighbours.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Change.h" />
     <ClInclude Include="Changs.h" />
+    <ClInclude Include="Field.h" />
     <ClInclude Include="Neighbours.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

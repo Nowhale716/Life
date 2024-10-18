@@ -11,18 +11,7 @@ enum Rule {
     BIRTH = 3,    // Рождение клетки, если у нее 3 соседа
     SURVIVE_1 = 2, // Выживание клетки, если у нее 2 соседа
     SURVIVE_2 = 3  // Выживание клетки, если у нее 3 соседа
-} ;
-
-
-struct Change {
-    int x;
-    int y;
-};
-
-struct Changes {
-    int count;
-    Change* changes;  // Массив изменений
-} Changes;
+} ;ёё
 
 struct State {
     int generation;
