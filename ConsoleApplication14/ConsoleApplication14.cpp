@@ -13,17 +13,6 @@ enum Rule {
     SURVIVE_2 = 3  // Выживание клетки, если у нее 3 соседа
 } ;
 
-struct Neighbors {
-    int top_left;
-    int top;
-    int top_right;
-    int left;
-    int right;
-    int bottom_left;
-    int bottom;
-    int bottom_right;
-    int alive_count;
-};
 
 struct Change {
     int x;

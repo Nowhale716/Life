@@ -24,12 +24,24 @@
     <ClCompile Include="Neighbours.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Change.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Changs.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Neighbours.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Change.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Changs.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
