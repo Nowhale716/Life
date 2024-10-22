@@ -12,10 +12,3 @@ private:
 
 };
 
-State::State()
-{
-}
-
-State::~State()
-{
-}

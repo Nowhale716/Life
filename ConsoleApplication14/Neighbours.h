@@ -17,11 +17,3 @@ private:
     int bottom_right;
     int alive_count;
 };
-
-Neighbours::Neighbours()
-{
-}
-
-Neighbours::~Neighbours()
-{
-}

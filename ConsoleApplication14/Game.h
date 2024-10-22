@@ -13,11 +13,3 @@ private:
 	Rule rules;          // Правила игры
 	int max_generations;  // Максимальное количество поколений
 };
-
-Game::Game()
-{
-}
-
-Game::~Game()
-{
-}

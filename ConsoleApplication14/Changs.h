@@ -10,12 +10,3 @@ private:
 	int count;
 	Change* changes;
 };
-
-Changes::Changes()
-{
-}
-
-Changes::~Changes()
-{
-}
-

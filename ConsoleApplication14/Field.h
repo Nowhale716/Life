@@ -4,10 +4,14 @@
 class Field
 {
 public:
-	Field();
+	Field(): width(0), height(0){}
+	Field(int width, int height) {
+		this->width = width;
+		this->height = height;
+	}
 	~Field();
 
-	void createField(int width, int height) {
+	void printField() {
 		printf("Field created with width : %d and height %d\n", width, height);
 	}
 
@@ -20,11 +24,3 @@ private:
 	int height;
 	Cell cells;
 };
-
-Field::Field()
-{
-}
-
-Field::~Field()
-{
-}

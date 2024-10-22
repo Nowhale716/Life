@@ -9,11 +9,3 @@ private:
 	int x;
 	int y;
 };
-
-Change::Change()
-{
-}
-
-Change::~Change()
-{
-}
