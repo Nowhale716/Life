@@ -51,7 +51,7 @@ public:
     }
 
     void printField() const {
-        std::cout << "Размер поля: " << width << "x" << height << std::endl;
+        std::cout << "Field dimensions: " << width << "x" << height << std::endl;
     }
 
 private:

@@ -6,7 +6,7 @@ public:
     Cell(int x, int y, int state) : x(x), y(y), state(state) {}
 
     void display() const {
-        std::cout << "Клетка с координатами (" << x << ", " << y << ") с состоянием: " << state << std::endl;
+        std::cout << "Cell at (" << x << ", " << y << ") has state: " << state << std::endl;
     }
 
     void setState(int newState) { state = newState; }
@@ -16,7 +16,7 @@ public:
     int& getStateRef() { return state; }  // Возврат значения через ссылку
 
     friend std::ostream& operator<<(std::ostream& os, const Cell& cell) {  // Дружественная функция
-        os << "Клетка(" << cell.x << ", " << cell.y << ", " << cell.state << ")";
+        os << "Cell(" << cell.x << ", " << cell.y << ", " << cell.state << ")";
         return os;
     }
 
@@ -29,8 +29,10 @@ public:
         return *this;
     }
 
+
 private:
     int x;
     int y;
     int state;
 };
+
