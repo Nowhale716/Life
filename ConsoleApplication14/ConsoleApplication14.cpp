@@ -10,54 +10,56 @@
 
 void dynamicArrayOfCells() {
     const int size = 3;
-
-    // Создание динамического массива объектов класса Person
     Cell* cells = new Cell[size]{
         {0, 10, 1},
         {10, 10, 0},
         {20, 21, 1}
     };
 
-    // Доступ к элементам массива и вызов метода display
     for (int i = 0; i < size; ++i) {
         cells[i].display();
     }
 
-    // Удаление динамического массива объектов
     delete[] cells;
 }
 
 void arrayOfDynamicObjects() {
     const int size = 3;
-
-    // Создание массива указателей на объекты класса Person
     Cell** cells = new Cell * [size];
 
-    // Создание динамических объектов и сохранение их в массиве
     cells[0] = new Cell(21, 43, 1);
-    cells[1] = new Cell(53, 21,0);
-    cells[2] = new Cell(43,10,1);
+    cells[1] = new Cell(53, 21, 0);
+    cells[2] = new Cell(43, 10, 1);
 
-    // Доступ к элементам массива и вызов метода display
     for (int i = 0; i < size; ++i) {
-        cells[i]->display();  // Использование оператора -> для доступа к методу
+        cells[i]->display();
     }
 
-    // Удаление динамических объектов
     for (int i = 0; i < size; ++i) {
         delete cells[i];
     }
 
-    // Удаление массива указателей
     delete[] cells;
 }
 
-int main()
-{
-    std::cout << "Dynamic array of cells:" << std::endl;
+int main() {
+    setlocale(LC_ALL, "rus");
+    std::cout << "Динамический массив клеток:" << std::endl;
     dynamicArrayOfCells();
 
-    std::cout << "\nArray of dynamic objects:" << std::endl;
+    std::cout << "\nМассив динамических объектов:" << std::endl;
     arrayOfDynamicObjects();
 
+    // Демонстрация возврата через указатель и ссылку
+    Cell exampleCell(5, 5, 1);
+    int* statePtr = exampleCell.getStatePtr();
+    int& stateRef = exampleCell.getStateRef();
+
+    std::cout << "Передача значения через указатель: " << *statePtr << std::endl;
+    std::cout << "Передача значений через ссылку: " << stateRef << std::endl;
+
+    // Демонстрация дружественной функции
+    std::cout << "Используя дружественную функцию: " << exampleCell << std::endl;
+
+    return 0;
 }
