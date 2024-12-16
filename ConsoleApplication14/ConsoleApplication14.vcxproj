@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AdvancedCell.cpp" />
     <ClCompile Include="Cell.cpp" />
     <ClCompile Include="Change.cpp" />
     <ClCompile Include="Changs.cpp" />
     <ClCompile Include="ConsoleApplication14.cpp" />
+    <ClCompile Include="Drawable.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Neighbours.cpp" />
@@ -150,9 +152,11 @@
     <ClCompile Include="State.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdvancedCell.h" />
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Change.h" />
     <ClInclude Include="Changs.h" />
+    <ClInclude Include="Drawable.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Neighbours.h" />
