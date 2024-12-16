@@ -14,6 +14,7 @@ void showCellInfo(const Cell& cell) {
 }
 
 
+
 int main() {
 
     Cell* cellPtr = new AdvancedCell(1, 2, 1, 100);
